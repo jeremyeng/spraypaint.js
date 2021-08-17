@@ -28,7 +28,7 @@
     "lint:ci": "yarn run eslint {src,test}{,/**}/*.ts",
     "prepublish": "yarn build",
     "update:dependencies": "ncu -u",
-    "prepack": "yarn build"
+    "prepack": "tsc --outDir ./dist"
   },
   "husky": {
     "hooks": {
